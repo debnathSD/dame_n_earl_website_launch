@@ -206,18 +206,18 @@
         MinutesLeft = 0;
         SecondsLeft = 0;
       }
-      element
-        .find(".ClassyCountdown-days canvas")
-        .attr({ width: "170", height: "170" });
-      element
-        .find(".ClassyCountdown-hours canvas")
-        .attr({ width: "170", height: "170" });
-      element
-        .find(".ClassyCountdown-minutes canvas")
-        .attr({ width: "170", height: "170" });
-      element
-        .find(".ClassyCountdown-seconds canvas")
-        .attr({ width: "170", height: "170" });
+      //   element
+      //     .find(".ClassyCountdown-days canvas")
+      //     .attr({ width: 180, height: 180 });
+      //   element
+      //     .find(".ClassyCountdown-hours canvas")
+      //     .attr({ width: 180, height: 180 });
+      //   element
+      //     .find(".ClassyCountdown-minutes canvas")
+      //     .attr({ width: 180, height: 180 });
+      //   element
+      //     .find(".ClassyCountdown-seconds canvas")
+      //     .attr({ width: 180, height: 180 });
       element
         .find(".ClassyCountdown-days input")
         .val(365 - DaysLeft)
