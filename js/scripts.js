@@ -17,7 +17,6 @@
       var remainingSecFraction = releaseTimeInSeconds - currentTimeInSeconds;
       var remainingSec = parseInt(remainingSecFraction, 10);
     }
-    console.log(remainingSec);
     $(".countdown").ClassyCountdown({
       theme: "flat-colors-very-wide",
       end: $.now() + remainingSec,
