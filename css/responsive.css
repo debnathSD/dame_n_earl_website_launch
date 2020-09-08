@@ -78,9 +78,24 @@
 	--------------------------------- */
   body {
     overflow-y: hidden !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
   }
   .right-section {
     display: none;
+  }
+  .left-section {
+    background: rgb(214, 120, 184);
+    background: linear-gradient(
+      0deg,
+      rgba(214, 120, 184, 0.9783263647255778) 1%,
+      rgba(222, 0, 255, 1) 49%,
+      rgba(255, 255, 255, 1) 70%
+    );
   }
   p {
     line-height: 1.4;
