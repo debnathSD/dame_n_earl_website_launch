@@ -10,7 +10,14 @@
   //ROUNDED TIMES COUNTDOWN
 
   if (isExists("#rounded-countdown")) {
-    var remainingSec = $(".countdown").data("remaining-sec");
+    // var remainingSec = $(".countdown").data("remaining-sec");
+    var currentTimeInSeconds = new Date().getTime() / 1000;
+    var releaseTimeInSeconds = new Date("2020.09.15").getTime() / 1000;
+    if (currentTimeInSeconds < releaseTimeInSeconds) {
+      var remainingSecFraction = releaseTimeInSeconds - currentTimeInSeconds;
+      var remainingSec = parseInt(remainingSecFraction, 10);
+    }
+    console.log(remainingSec);
     $(".countdown").ClassyCountdown({
       theme: "flat-colors-very-wide",
       end: $.now() + remainingSec,
